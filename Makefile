@@ -6,7 +6,7 @@
 #    By: cpieri <cpieri@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/01/18 11:31:17 by cpieri            #+#    #+#              #
-#    Updated: 2018/03/09 12:42:16 by cpieri           ###   ########.fr        #
+#    Updated: 2018/03/09 14:15:24 by cpieri           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,7 +51,7 @@ all:		$(NAME)
 
 $(NAME):	$(OBJ)
 			@make -C ./libft
-			$(CC) $(CFLAGS) -o $(NAME) $(OBJ) $(CPPFLAGS) $(FLAGSFT) $(FRAME) $(I_SDL) $(L_SDL)
+			$(CC) $(CFLAGS) -o $(NAME) $(OBJ) $(CPPFLAGS) $(FLAGSFT) $(I_SDL) $(L_SDL)
 
 $(OBJ_PATH)/%.o: $(SRC_PATH)/%.c
 			@mkdir $(OBJ_PATH) 2> /dev/null || true

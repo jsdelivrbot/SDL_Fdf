@@ -6,7 +6,7 @@
 /*   By: cpieri <cpieri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/05 16:11:55 by cpieri            #+#    #+#             */
-/*   Updated: 2018/03/09 11:31:21 by cpieri           ###   ########.fr       */
+/*   Updated: 2018/03/09 12:34:32 by cpieri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,10 @@ static void		change_alt(int av, t_mlx *mlx)
 	generate_new_image(mlx);
 }
 
-static int 	update_event(t_event *touch, t_mlx *mlx)
+static int		update_event(t_event *touch, t_mlx *mlx)
 {
 	SDL_Event		event;
-	int					key_code;
+	int				key_code;
 
 	while (SDL_PollEvent(&event))
 	{
@@ -57,7 +57,7 @@ static int 	update_event(t_event *touch, t_mlx *mlx)
 int				event_key(void *init)
 {
 	t_mlx		*mlx;
-	t_event	touch;
+	t_event		touch;
 
 	mlx = (t_mlx*)init;
 	if (!(touch.key = (char*)ft_memalloc(sizeof(char) * 300)))

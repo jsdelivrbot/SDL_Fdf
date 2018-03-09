@@ -6,7 +6,7 @@
 /*   By: cpieri <cpieri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/18 11:53:37 by cpieri            #+#    #+#             */
-/*   Updated: 2018/03/09 11:30:46 by cpieri           ###   ########.fr       */
+/*   Updated: 2018/03/09 12:31:11 by cpieri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <SDL.h>
 #include "fdf.h"
 
-int		start_zoom(t_mlx *init)
+int				start_zoom(t_mlx *init)
 {
 	int		x_max;
 	int		y_max;

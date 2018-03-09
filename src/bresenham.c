@@ -6,7 +6,7 @@
 /*   By: cpieri <cpieri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/19 09:53:17 by cpieri            #+#    #+#             */
-/*   Updated: 2018/03/07 14:14:06 by cpieri           ###   ########.fr       */
+/*   Updated: 2018/03/09 12:35:06 by cpieri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ void	bresenham(t_point *p1, t_point *p2, t_mlx *mlx)
 		if (p1->y > 0 && p1->y < W_HEIGHT && p1->x > 0 && p1->x < W_WIDTH)
 		{
 			SDL_RenderDrawPoint(mlx->rend, p1->x, p1->y);
-			//mlx->img.data[(p1->y * mlx->img.size_l / 4) + (p1->x)] = mlx->color;
 			e.e = e.err;
 			if (e.e > -e.ex)
 			{

@@ -6,7 +6,7 @@
 #    By: cpieri <cpieri@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/01/18 11:31:17 by cpieri            #+#    #+#              #
-#    Updated: 2018/03/08 14:39:52 by cpieri           ###   ########.fr        #
+#    Updated: 2018/03/09 12:42:16 by cpieri           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,7 +51,6 @@ all:		$(NAME)
 
 $(NAME):	$(OBJ)
 			@make -C ./libft
-			@make -C ./minilibx
 			$(CC) $(CFLAGS) -o $(NAME) $(OBJ) $(CPPFLAGS) $(FLAGSFT) $(FRAME) $(I_SDL) $(L_SDL)
 
 $(OBJ_PATH)/%.o: $(SRC_PATH)/%.c
@@ -61,7 +60,6 @@ $(OBJ_PATH)/%.o: $(SRC_PATH)/%.c
 clean:
 			@echo "cleaning"
 			@make clean -C ./libft/
-			@make clean -C ./minilibx/
 			@/bin/rm -f $(OBJ)
 			@rmdir $(OBJ_PATH) 2> /dev/null || true
 

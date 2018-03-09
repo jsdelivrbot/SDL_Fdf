@@ -6,7 +6,7 @@
 /*   By: cpieri <cpieri@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/18 12:09:51 by cpieri            #+#    #+#             */
-/*   Updated: 2018/03/09 11:12:17 by cpieri           ###   ########.fr       */
+/*   Updated: 2018/03/09 12:41:28 by cpieri           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <SDL.h>
 # include "../libft/includes/libft.h"
-# include "../minilibx/mlx.h"
 
 # define W_WIDTH	1227
 # define W_HEIGHT	912

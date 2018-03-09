@@ -6,7 +6,7 @@
 #    By: cpieri <cpieri@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/01/18 11:31:17 by cpieri            #+#    #+#              #
-#    Updated: 2018/03/09 14:15:24 by cpieri           ###   ########.fr        #
+#    Updated: 2018/03/09 14:17:52 by cpieri           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,9 @@ CC		=	gcc
 
 CFLAGS	=	-Wall -Wextra -Werror
 
-FRAME	=	-L./minilibx -lmlx -framework OpenGl -framework AppKit
+L_SDL	=	$(shell pkg-config --libs sdl2)
+
+I_SDL	= 	$(shell pkg-config --cflags sdl2)
 
 CPPFLAGS=	-Iinclude
 
@@ -40,10 +42,6 @@ OBJ_NAME=	$(SRC_NAME:.c=.o)
 SRC		=	$(addprefix $(SRC_PATH)/,$(SRC_NAME))
 
 OBJ		=	$(addprefix $(OBJ_PATH)/,$(OBJ_NAME))
-
-L_SDL	=	$(shell pkg-config --libs sdl2)
-
-I_SDL	= 	$(shell pkg-config --cflags sdl2)
 
 .PHONY:	all clean fclean re
 
